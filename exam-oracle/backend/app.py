@@ -1,6 +1,9 @@
 from flask import Flask, jsonify
 from flask_cors import CORS
 import os
+import sys
+sys.path.append(os.path.dirname(os.path.abspath(__file__)))
+
 
 from routes.auth_routes          import auth_bp
 from routes.pdf_routes           import pdf_bp
@@ -14,7 +17,7 @@ from routes.shared_notes_routes  import shared_notes_bp
 from database.db import init_db
 
 app = Flask(__name__)
-CORS(app, resources={r"/api/*": {"origins": "http://localhost:3000"}})
+CORS(app, resources={r"/api/*": {"origins": "*"}})
 
 app.config["UPLOAD_FOLDER"]      = os.path.join(os.path.dirname(__file__), "uploads")
 app.config["MAX_CONTENT_LENGTH"] = 50 * 1024 * 1024
