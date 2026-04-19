@@ -48,9 +48,9 @@ const CSS = `
   @media(max-width:768px) { .td-stat-row{grid-template-columns:1fr 1fr;} .td-wrap{padding:16px;} .form-row{grid-template-columns:1fr;} }
 `;
 
-const BASE          = "http://localhost:5000/api";
-const GROQ_API_KEY  = "PASTE_YOUR_GROQ_KEY_HERE";
-const GROQ_URL      = "https://api.groq.com/openai/v1/chat/completions";
+const BASE = process.env.REACT_APP_BASE_URL;
+const GROQ_API_KEY = process.env.REACT_APP_GROQ_API_KEY;
+const GROQ_URL = process.env.REACT_APP_GROQ_URL;
 
 function Av({ name="?", size=34 }) {
   const colors = [["#7c5cfc","#5b3fd4"],["#00d4aa","#009977"],["#ff6b35","#cc4400"],["#f59e0b","#d97706"]];

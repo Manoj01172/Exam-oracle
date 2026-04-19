@@ -27,7 +27,7 @@ const CSS = `
   @keyframes spin { to{transform:rotate(360deg)} }
 `;
 
-const BASE = "http://localhost:5000/api";
+const BASE = process.env.REACT_APP_BASE_URL;
 
 export default function MyClasses({ user }) {
   const [classes,  setClasses]  = useState([]);

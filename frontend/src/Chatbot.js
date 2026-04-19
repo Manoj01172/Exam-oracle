@@ -77,9 +77,8 @@ const CSS = `
   }
 `;
 
-const GROQ_API_KEY = "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";
-const GROQ_URL     = "https://api.groq.com/openai/v1/chat/completions";
-
+const GROQ_API_KEY = process.env.REACT_APP_GROQ_API_KEY;
+const GROQ_URL = process.env.REACT_APP_GROQ_URL;
 const EXAMPLE_QUESTIONS = [
   { icon:"🔮", text:"What are the most important topics for exam?" },
   { icon:"📝", text:"Give me 5 predicted questions with answers" },

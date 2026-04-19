@@ -74,8 +74,8 @@ const CSS = `
   @media(max-width:600px) { .notes-wrap{padding:16px;} }
 `;
 
-const GROQ_API_KEY = "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";
-const GROQ_URL     = "https://api.groq.com/openai/v1/chat/completions";
+const GROQ_API_KEY = process.env.REACT_APP_GROQ_API_KEY;
+const GROQ_URL = process.env.REACT_APP_GROQ_URL;
 
 const UNIT_COLORS = [
   "var(--purple)", "var(--teal)", "var(--orange)",

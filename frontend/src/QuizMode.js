@@ -89,8 +89,8 @@ const CSS = `
   }
 `;
 
-const GROQ_API_KEY  = "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"; // same key as backend
-const GROQ_URL      = "https://api.groq.com/openai/v1/chat/completions";
+const GROQ_API_KEY = process.env.REACT_APP_GROQ_API_KEY;
+const GROQ_URL = process.env.REACT_APP_GROQ_URL;
 const TIMER_DEFAULT = 30;
 
 // ── Generate MCQs via Groq ────────────────────────────────────────────────────

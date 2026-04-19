@@ -23,7 +23,7 @@ const CSS = `
   @media(max-width:420px) { .notif-panel{width:calc(100vw - 32px);right:16px;} }
 `;
 
-const BASE = "http://localhost:5000/api";
+const BASE = process.env.REACT_APP_BASE_URL;
 
 const TYPE_CONFIG = {
   assignment: { icon:"📚", color:"rgba(124,92,252,0.1)" },

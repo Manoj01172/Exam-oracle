@@ -62,7 +62,8 @@ const CSS = `
   @media(max-width:600px) { .at-wrap{padding:16px;} .at-summary-grid{grid-template-columns:1fr 1fr;} }
 `;
 
-const BASE = "http://localhost:5000/api";
+
+const BASE = process.env.REACT_APP_BASE_URL;
 
 export default function AttendanceTracker({ user }) {
   const [tab,          setTab]          = useState("summary");

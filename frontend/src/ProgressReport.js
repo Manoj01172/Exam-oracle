@@ -39,7 +39,7 @@ const CSS = `
   @media(max-width:768px) { .pr-stat-row{grid-template-columns:1fr 1fr;} .pr-wrap{padding:16px;} }
 `;
 
-const BASE = "http://localhost:5000/api";
+const BASE = process.env.REACT_APP_BASE_URL;
 
 function Av({ name="?", size=34 }) {
   const colors = [["#7c5cfc","#5b3fd4"],["#00d4aa","#009977"],["#ff6b35","#cc4400"],["#f59e0b","#d97706"]];

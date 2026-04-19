@@ -35,7 +35,7 @@ const CSS = `
   @media(max-width:600px) { .dq-wrap{padding:16px;} }
 `;
 
-const BASE = "http://localhost:5000/api";
+const BASE = process.env.REACT_APP_BASE_URL;
 
 export default function DoubtQA({ user }) {
   const [doubts,    setDoubts]    = useState([]);

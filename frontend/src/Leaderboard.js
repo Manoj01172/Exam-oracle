@@ -34,7 +34,7 @@ const CSS = `
   @media(max-width:600px) { .lb-wrap{padding:16px;} .lb-podium-block{width:70px;} .lb-stats-row{grid-template-columns:1fr 1fr;} }
 `;
 
-const BASE = "http://localhost:5000/api";
+const BASE = process.env.REACT_APP_BASE_URL;
 
 function Av({ name="?", size=40 }) {
   const colors = [["#7c5cfc","#5b3fd4"],["#00d4aa","#009977"],["#ff6b35","#cc4400"],["#f59e0b","#d97706"],["#ec4899","#be185d"],["#3b82f6","#1d4ed8"]];

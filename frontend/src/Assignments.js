@@ -37,7 +37,7 @@ const CSS = `
   @media(max-width:600px) { .asn-wrap{padding:16px;} }
 `;
 
-const BASE = "http://localhost:5000/api";
+const BASE = process.env.REACT_APP_BASE_URL;
 
 export default function Assignments({ user }) {
   const [assignments, setAssignments] = useState([]);
