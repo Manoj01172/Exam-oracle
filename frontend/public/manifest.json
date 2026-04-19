@@ -1,0 +1,30 @@
+{
+  "short_name": "Exam Oracle",
+  "name": "Exam Oracle — ML Study System",
+  "description": "AI-powered exam prediction and smart study system",
+  "icons": [
+    {
+      "src": "data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><text y='.9em' font-size='90'>🔮</text></svg>",
+      "sizes": "192x192",
+      "type": "image/svg+xml"
+    }
+  ],
+  "start_url": ".",
+  "display": "standalone",
+  "theme_color": "#7c5cfc",
+  "background_color": "#080a12",
+  "orientation": "portrait-primary",
+  "categories": ["education", "productivity"],
+  "shortcuts": [
+    {
+      "name": "Dashboard",
+      "url": "/",
+      "description": "Go to Dashboard"
+    },
+    {
+      "name": "Quiz Mode",
+      "url": "/?page=quiz",
+      "description": "Start a Quiz"
+    }
+  ]
+}
