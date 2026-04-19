@@ -1,5 +1,5 @@
 // Central API service — all backend communication goes through here
-const BASE_URL = "http://localhost:5000/api";
+const BASE_URL = "https://exam-oracle-backend.onrender.com/api";
 
 // ── Generic request helper ────────────────────────────────────────────────────
 async function request(method, endpoint, body = null, isFormData = false) {
