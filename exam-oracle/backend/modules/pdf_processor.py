@@ -7,7 +7,7 @@ try:
     from pdf2image import convert_from_path
     import pytesseract
     # Tesseract path for Windows
-    pytesseract.pytesseract.tesseract_cmd = r"C:\Program Files\Tesseract-OCR\tesseract.exe"
+    # pytesseract.pytesseract.tesseract_cmd = r"C:\Program Files\Tesseract-OCR\tesseract.exe"
     OCR_AVAILABLE = True
 except ImportError:
     OCR_AVAILABLE = False
